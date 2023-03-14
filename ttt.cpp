@@ -1111,7 +1111,7 @@ int GetDecisionPoints(vector<int> board, int position){
         opponentLinesToBeBlocked++;
     else if(board[23] == 0 && board[29] == 0)
         userLinesToBeStarted++;
-    else if(board[23] + board[29] == -1)\
+    else if(board[23] + board[29] == -1)
         userLinesToBeContinued++;
     /// Third lane, 6-16-26
     if(board[6] + board[16] == 1)
@@ -1524,6 +1524,307 @@ void printNumbersForTheBoard(vector<int> board){
 
 }
 
+void printBoardNormal(vector<int> board){
+    //board[7] = 1;
+    //board[8] = 1;
+    //board[9] = -1;
+    cout << "                  _____________________________________________" << endl;
+    cout << "       	         /              /              /              /" << endl;
+    cout << "	        /              /              /              /" << endl;
+
+
+                cout << "               /      ";
+                if(board[1] == -1)
+                    cout << "X";
+                else if(board[1] == 1)
+                    cout << "O";
+                else
+                    cout << " ";
+
+                 cout << "       /      ";
+                if(board[2] == -1)
+                    cout << "X";
+                else if(board[2] == 1)
+                    cout << "O";
+                else
+                    cout << " ";
+                cout <<  "       /      ";
+                if(board[3] == -1)
+                    cout << "X";
+                else if(board[3] == 1)
+                    cout << "O";
+                else
+                    cout << " ";
+                cout << " 	    /" << endl;
+
+
+    cout << "              /              /		    /		   /" << endl;
+    cout << "             /______________/______________/______________/" << endl;
+    cout << "            /		   /	          /	         /" << endl;
+    cout << "           /              /              /              /" << endl;
+
+
+                cout << "          /      ";
+                if(board[4] == -1)
+                    cout << "X";
+                else if(board[4] == 1)
+                    cout << "O";
+                else
+                    cout << " ";
+
+                cout << "       /      ";
+                if(board[5] == -1)
+                    cout << "X";
+                else if(board[5] == 1)
+                    cout << "O";
+                else
+                    cout << " ";
+
+                cout << "       /      ";
+                if(board[6] == -1)
+                    cout << "X";
+                else if(board[6] == 1)
+                    cout << "O";
+                else
+                    cout << " ";
+
+                cout <<"       /" << endl;
+
+
+    cout << "         /              /	       /              /" << endl;
+    cout << "        /______________/______________/______________/" << endl;
+    cout << "       /	      /              /	            /" << endl;
+    cout << "      /		     /		    /		   /" << endl;
+
+
+                cout << "     /      ";
+                if(board[7] == -1)
+                    cout << "X";
+                else if(board[7] == 1)
+                    cout << "O";
+                else
+                    cout << " ";
+                cout << "       /      ";
+                if(board[8] == -1)
+                    cout << "X";
+                else if(board[8] == 1)
+                    cout << "O";
+                else
+                    cout << " ";
+
+                cout << "       /      ";
+                if(board[9] == -1)
+                    cout << "X";
+                else if(board[9] == 1)
+                    cout << "O";
+                else
+                    cout << " ";
+                cout << "       /" << endl;
+
+
+    cout << "    /              /              /              /" << endl;
+    cout << "   /		  /		 /		/" << endl;
+    cout << "  /______________/______________/______________/" << endl << endl << endl << endl;
+
+       cout << "                  _____________________________________________" << endl;
+    cout << "       	         /              /              /              /" << endl;
+    cout << "	        /              /              /              /" << endl;
+
+
+                cout << "               /      ";
+                if(board[11] == -1)
+                    cout << "X";
+                else if(board[11] == 1)
+                    cout << "O";
+                else
+                    cout << " ";
+
+                 cout << "       /      ";
+                if(board[12] == -1)
+                    cout << "X";
+                else if(board[12] == 1)
+                    cout << "O";
+                else
+                    cout << " ";
+                cout <<  "       /      ";
+                if(board[13] == -1)
+                    cout << "X";
+                else if(board[13] == 1)
+                    cout << "O";
+                else
+                    cout << " ";
+                cout << " 	    /" << endl;
+
+
+    cout << "              /              /		    /		   /" << endl;
+    cout << "             /______________/______________/______________/" << endl;
+    cout << "            /		   /	          /	         /" << endl;
+    cout << "           /              /              /              /" << endl;
+
+
+                cout << "          /      ";
+                if(board[14] == -1)
+                    cout << "X";
+                else if(board[14] == 1)
+                    cout << "O";
+                else
+                    cout << " ";
+
+                cout << "       /      ";
+                if(board[15] == -1)
+                    cout << "X";
+                else if(board[15] == 1)
+                    cout << "O";
+                else
+                    cout << " ";
+
+                cout << "       /      ";
+                if(board[16] == -1)
+                    cout << "X";
+                else if(board[16] == 1)
+                    cout << "O";
+                else
+                    cout << " ";
+
+                cout <<"       /" << endl;
+
+
+    cout << "         /              /	       /              /" << endl;
+    cout << "        /______________/______________/______________/" << endl;
+    cout << "       /	      /              /	            /" << endl;
+    cout << "      /		     /		    /		   /" << endl;
+
+
+                cout << "     /      ";
+                if(board[17] == -1)
+                    cout << "X";
+                else if(board[17] == 1)
+                    cout << "O";
+                else
+                    cout << " ";
+                cout << "       /      ";
+                if(board[18] == -1)
+                    cout << "X";
+                else if(board[18] == 1)
+                    cout << "O";
+                else
+                    cout << " ";
+
+                cout << "       /      ";
+                if(board[19] == -1)
+                    cout << "X";
+                else if(board[19] == 1)
+                    cout << "O";
+                else
+                    cout << " ";
+                cout << "       /" << endl;
+
+
+    cout << "    /              /              /              /" << endl;
+    cout << "   /		  /		 /		/" << endl;
+    cout << "  /______________/______________/______________/" << endl << endl << endl << endl;
+
+       cout << "                  _____________________________________________" << endl;
+    cout << "       	         /              /              /              /" << endl;
+    cout << "	        /              /              /              /" << endl;
+
+
+                cout << "               /      ";
+                if(board[21] == -1)
+                    cout << "X";
+                else if(board[21] == 1)
+                    cout << "O";
+                else
+                    cout << " ";
+
+                 cout << "       /      ";
+                if(board[22] == -1)
+                    cout << "X";
+                else if(board[22] == 1)
+                    cout << "O";
+                else
+                    cout << " ";
+                cout <<  "       /      ";
+                if(board[23] == -1)
+                    cout << "X";
+                else if(board[23] == 1)
+                    cout << "O";
+                else
+                    cout << " ";
+                cout << " 	    /" << endl;
+
+
+    cout << "              /              /		    /		   /" << endl;
+    cout << "             /______________/______________/______________/" << endl;
+    cout << "            /		   /	          /	         /" << endl;
+    cout << "           /              /              /              /" << endl;
+
+
+                cout << "          /      ";
+                if(board[24] == -1)
+                    cout << "X";
+                else if(board[24] == 1)
+                    cout << "O";
+                else
+                    cout << " ";
+
+                cout << "       /      ";
+                if(board[25] == -1)
+                    cout << "X";
+                else if(board[25] == 1)
+                    cout << "O";
+                else
+                    cout << " ";
+
+                cout << "       /      ";
+                if(board[26] == -1)
+                    cout << "X";
+                else if(board[26] == 1)
+                    cout << "O";
+                else
+                    cout << " ";
+
+                cout <<"       /" << endl;
+
+
+    cout << "         /              /	       /              /" << endl;
+    cout << "        /______________/______________/______________/" << endl;
+    cout << "       /	      /              /	            /" << endl;
+    cout << "      /		     /		    /		   /" << endl;
+
+
+                cout << "     /      ";
+                if(board[27] == -1)
+                    cout << "X";
+                else if(board[27] == 1)
+                    cout << "O";
+                else
+                    cout << " ";
+                cout << "       /      ";
+                if(board[28] == -1)
+                    cout << "X";
+                else if(board[28] == 1)
+                    cout << "O";
+                else
+                    cout << " ";
+
+                cout << "       /      ";
+                if(board[29] == -1)
+                    cout << "X";
+                else if(board[29] == 1)
+                    cout << "O";
+                else
+                    cout << " ";
+                cout << "       /" << endl;
+
+
+    cout << "    /              /              /              /" << endl;
+    cout << "   /		  /		 /		/" << endl;
+    cout << "  /______________/______________/______________/" << endl << endl;
+
+
+}
+
 
 void game(){
     vector<int> board = InitializeVector();
@@ -1537,7 +1838,6 @@ void game(){
                     theBestMove = i;
                 }
             }
-            cout << "The best move from pc: " << theBestMove << endl;
             board[theBestMove] = -1;
             //if(theBestMove == 100)
               //  break;
@@ -1559,13 +1859,15 @@ void game(){
                     cout << endl << "Incorect position, please, try again!";
                     Sleep(1500);
                     system("cls");
-                    printNumbersForTheBoard(board);
+                    //printNumbersForTheBoard(board);
+                    printBoardNormal(board);
                 }
             }
 
         }
         system("cls");
-        printNumbersForTheBoard(board);
+        //printNumbersForTheBoard(board);
+        printBoardNormal(board);
         switch(checkIfGameEnded(board)){
         case -1:
             cout << "Algo win";
